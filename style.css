@@ -83,7 +83,7 @@ html, body{
     position: relative;
 }
 
-#content video{
+#content img{
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -404,6 +404,7 @@ footer h1{
 footer span{
     color: aqua;
 }
+
 
 
 
