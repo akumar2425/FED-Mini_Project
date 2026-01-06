@@ -380,7 +380,7 @@ html, body{
 }
 
 #logo{
-    height: 80%;
+    height: 75%;
     width: 100%;
     background-image: url(https://cdn.wallpapersafari.com/76/98/MBGYmS.png);
     background-size: cover;
@@ -404,6 +404,7 @@ footer h1{
 footer span{
     color: aqua;
 }
+
 
 
 
