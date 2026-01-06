@@ -1,0 +1,410 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    padding: 0.0000001px;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    background-color: #F8F8F8;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+#nav{
+    /* background-color: red; */
+    margin-top: 40px;
+    height: 12vh;
+    width: 100%;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    /* background: transparent; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav h1{
+    /* background-color: green; */
+    height: 100%;
+    width: 21%;
+    font-family: Monument;
+    font-size: 32px;
+    font-weight: 500;
+    padding-left: 40px;
+    /* letter-spacing: -2px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav h2{
+    /* background-color: green; */
+    height: 100%;
+    width: 22%;
+    border-right: 3px solid black;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav h2:nth-last-child(2){
+    width: 25%;
+}
+
+#nav h2:nth-last-child(1){
+    width: 10%;
+    border-right: none;
+}
+
+#center{
+    height: 90%;
+    width: 100%;
+    /* background-color: red; */
+    padding: 3.4vw;
+    padding-left: 4vw;
+    padding-right: 6vw;
+    padding-left: 6vw;
+}
+
+#content{
+    height: 100%;
+    width: 100%;
+    /* background-color: blue; */
+    position: relative;
+}
+
+#content video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#overlay{
+    /* background-color: orange; */
+    padding: 3vw;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+}
+
+#over1{
+    /* background-color: greenyellow; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 2vw;
+}
+
+#over1 h1{
+    font-family: Monument;
+    font-size: 2.6vw;
+    color: #fff;
+}
+
+#over1 p{
+    /* font-family: ; */
+    font-size: 1.4vw;
+    color: #fff;
+    padding: 1vw;
+    border: 0.5px solid white;
+    border-radius: 50%;
+}
+
+#over2{
+    /* background-color: olive; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid white;
+}
+
+#over2 h1{
+    font-size: 15px;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+#over2 img{
+    height: 4vw;
+    width: 4vw;
+}
+
+#scroll{
+    /* background-color: red; */
+    height: 18vw;
+    width: 100%;
+    gap: 0.000001px;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.container{
+    /* background-color: blue; */
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    padding: 1.123vw;
+    animation-name: anime1;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.container img{
+    /* display: none; */
+    height: 85%;
+    width: 13%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+    margin: .7vw;
+    
+}
+
+#container1{
+    /* background-color: orange; */
+    height: 100%;
+    width: 100%;
+}
+
+#container2{
+    /* background-color: grey; */
+    height: 100%;
+    width: 100%;
+}
+
+#container3{
+    /* background-color: grey; */
+    height: 100%;
+    width: 100%;
+}
+
+@keyframes anime1 {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-200%);
+    }
+}
+
+
+#alphabet{
+    /* background-color: violet; */
+    height: 4.5vw;
+    width: 100%;
+    display: flex;
+    gap: .7vw;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+#alphabet h5{
+    font-family: serif;
+    font-size: 1.6vw;
+    text-transform: uppercase;
+    border-bottom: 2px solid #000;
+    font-style: italic;
+    margin-right: 2vw;
+}
+
+#alphabet h6{
+    font-family: sans-serif;
+    font-size: 1vw;
+    text-transform: uppercase;
+    /* font-style: italic; */
+    background-color: rgba(255, 255, 0, 0);
+    padding: .54vw 0.84vw;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#alphabet h6:hover{
+    border: 2px solid black;
+}
+
+#page1{
+    /* background-color: blue; */
+    /* margin-top: 1vw; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 4vw;
+    gap: 2vw;
+}
+
+#page1-part1{
+    /* background-color: red; */
+    height: 100%;
+    width: 50%;
+    background-image: url(https://images.steamusercontent.com/ugc/784108003632259449/1FBD81D71DE6840215E30AD9B4F7E749202C1FA7/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false);
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-position: top;
+}
+
+#page1-part2{
+    /* background-color: green; */
+    height: 100%;
+    width: 40%; 
+    position: top;
+    margin-right: 4vw;
+}
+
+#page1-part2 img{
+    height: 70%;
+    width: 100%;
+    object-fit: cover
+}
+
+#page1-text{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    object-position: top;
+    margin-top: 1vw;
+}
+
+#page1-text h2{
+    /* background-color: grey; */
+    height: 90%;
+    width: 40%;
+}
+
+#page1-text p{
+    /* background-color: white; */
+    height: 90%;
+    width: 45%;
+}
+
+#page1-title{
+    /* background-color: grey; */
+    height: 4vw;
+    padding: 1vw 4vw;
+    margin-top: -2vw;
+}
+
+#page1-title h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    align-items: center;
+}
+
+#page1-title span{
+    font-family: monument;
+    color: rgb(235, 120, 49);
+}
+
+#page2{
+    /* background-color: blue; */
+    height: 90%;
+    width: 100%;
+    padding: 2vw 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#page2-part1{
+    /* background-color: red; */
+    height: 100%;
+    width: 40%;
+}
+
+#page2-part1 img{
+    height: 70%;
+    width: 70%;
+}
+
+#page2-part1 h3{
+    margin: 2vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#page2-part2{
+    /* background-color: green; */
+    height: 100%;
+    width: 60%;
+    margin-right: 4vw;
+    background-image: url(https://i.redd.it/m4z7vg6htsfb1.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+#doom{
+    /* background-color: blue; */
+    height: 80%;
+    padding: 0vw 4vw;
+    margin-top: -2vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#doom img{
+    height: 30vw;
+}
+
+#doom h1{
+    font-size: 4vw;
+    text-align: center;
+    margin-right: 2vw
+    
+}
+
+#doom span{
+    font-family: monument;
+    color: rgb(235, 120, 49);
+    font-size: 4vw;
+    text-align: center;
+}
+
+#logo{
+    height: 80%;
+    width: 100%;
+    background-image: url(https://cdn.wallpapersafari.com/76/98/MBGYmS.png);
+    background-size: cover;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    height: 25%;
+    width: 100%;
+    border: 4px solid black;
+    text-align: center;
+    padding: 0.7vw;
+    padding: 2vw;
+}
+
+footer h1{
+    font-size: 2.5vw;
+}
+
+footer span{
+    color: aqua;
+}
+
+
+
+
